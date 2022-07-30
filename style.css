@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Josefin Sans', sans-serif;
+}
+
+body {
+    height: 200vh;
+    width: 100%;
+    background-color: rgb(2, 2, 58);
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+}
+
+.primeiraParte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    width: inherit;
+}
+
+
+#botaoSimulador {
+    background-color: #8C6EF3ff;
+    padding: 2%;
+    border-radius: 25px;
+    border: 0px;
+    width: 30vw; 
+    height: 5vh;   
+    text-decoration: none;
+    color: white;
+    font-size:larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botaoSimulador:hover {
+    background-color: #FEC137ff;
+    transition: 500ms all;
+}
+
+
+
+/*
+
+$mango: #FEC137ff;
+$unbleached-silk: #F8DACDff;
+$medium-slate-blue: #8C6EF3ff;
+$dark-blue-gray: #666388ff;
+$orange-yellow-crayola: #FCD173ff;*/
+
+
+
+
+.segundaParte {
+    min-height: 100vh;
+    max-height: fit-content;
+    width: inherit;
+    color: white;
+    background-color: #8C6EF3ff;
+}    
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.entradas {
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+}
+
+.entradas #textoValor, #textoEntrada, #textoTaxaJuros, #textoPrazo {
+    border-radius: 25px;
+    border: none;
+    height: 5vh;
+    width: 15vw;
+    margin: 10px;
+    text-align: center;  
+}
+
+.botoesTabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#botaoCalcular {
+    border: none;
+    border-radius: 25px;
+    background-color: #FEC137ff;
+    padding: 5px;
+    width: 100px;
+    height: 5vh;
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#comCarencia {
+    cursor: pointer;
+}
+
+#listaSuspensa {
+    margin-left: 20px;
+    width: 80px;
+    height: 25px;
+    color: gray;
+    cursor: pointer;
+}
+
+.tabela {
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    padding: 15px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #FEC137ff;
+}
+
+tr {
+    background-color: #666388ff;
+}
+
+tr:hover {
+    background-color: rgb(124, 120, 167);
+    transition: 250ms all;
+}
+.novaSimulacao {
+    display: flex;
+    justify-content: center;
+}
+
+#botaoNovaSimulacao {
+    border: none;
+    border-radius: 25px;
+    background-color: #FEC137ff;
+    padding: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 25%;
+    height: 5vh;
+    color: white;
+    cursor: pointer;
+}

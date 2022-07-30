@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financiamento</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+        </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="primeiraParte">    
+            <figure id="imagemInicial">
+                <img src="/images/financiamento.png" alt="Financiamento">
+            </figure>
+            <p></p>
+            <a href="#segundaParte" id="botaoSimulador">Simulador de Financiamento</a>
+        </div>
+    
+        <div class="segundaParte" id="segundaParte">
+            <h2>Simulador de financiamento <br>
+                Sistema de Amortização Constante (SAC)</h2>
+            <div class="entradas">
+                <input id="textoValor" type="text" placeholder="Valor do Bem (R$)"><br>
+                <input id="textoEntrada" type="text" placeholder="Valor da Entrada (R$)"><br>
+                <input id="textoTaxaJuros" type="text" placeholder="Taxa de Juros (%)"><br>
+                <input id="textoPrazo" type="text" placeholder="Prazo (em meses)"><br>
+            </div>
+            <div class="botoesTabela">
+                <label>
+                    <button id="botaoCalcular">Calcular</button>
+                </label>
+                <label>
+                    <input id="comCarencia" type="checkbox"> Com carência?
+                </label>
+                <label>
+                    <select id="listaSuspensa" hidden>
+                        <option value="2">2 meses</option>
+                        <option value="3">3 meses</option>
+                        <option value="4">4 meses</option>
+                    </select>
+                </label>
+            </div>
+            <p></p>   
+            <div class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Número da Parcela</th>
+                            <th>Valor da Parcela</th>
+                            <th>Amortização</th>
+                            <th>Juros</th>
+                            <th>Saldo Devedor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabela">
+                    </tbody>
+                </table>
+            </div>
+            <div class="novaSimulacao">
+                <button id="botaoNovaSimulacao" hidden>Nova simulação</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
